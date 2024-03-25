@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Register",
+            "request": "launch",
+            "mainClass": "org.example.Register",
+            "projectName": "snowpark-java-template"
+        },
+        {
+            "type": "java",
+            "name": "ExcelWriter",
+            "request": "launch",
+            "mainClass": "org.example.procedure.ExcelWriter",
+            "projectName": "snowpark-java-template"
+        },
+        {
+            "type": "java",
+            "name": "Proc1",
+            "request": "launch",
+            "mainClass": "org.example.procedure.Proc1",
+            "projectName": "snowpark-java-template"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
