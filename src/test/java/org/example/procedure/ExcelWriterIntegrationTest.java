@@ -41,6 +41,8 @@ public class ExcelWriterIntegrationTest {
         var files = session.sql("ls @MYSTAGE  PATTERN = '.*output.xlsx'").first();
         if (!files.isPresent())
             fail("File was not found");
-        assertEquals("output.xlsx",files.get().get(0));
+        String expected = "mystage/output.xlsx";
+        String actual   = files.get().getString(0);
+        assertEquals(expected,actual);
     }
 }

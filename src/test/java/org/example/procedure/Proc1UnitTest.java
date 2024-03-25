@@ -22,7 +22,7 @@ public class Proc1UnitTest {
     Session session;
 
     @Test
-    public void shouldreturn7()
+    public void shouldCallAnAppendOnProducts()
     {
         session = mock(Session.class);
         // Mocking DataFrame
@@ -30,7 +30,9 @@ public class Proc1UnitTest {
         DataFrameWriter dataFrameWriterMock = mock(DataFrameWriter.class);
         // Mocking session.createDataFrame() to return the mocked DataFrame
         when(session.createDataFrame(any(), any())).thenReturn(dataFrameMock);
+        // Mocking DataFrameWriter.write() to return the mocked DataFrameWriter
         when(dataFrameMock.write()).thenReturn(dataFrameWriterMock);
+        // Mocking DataFrameWriter.mode() to return the mocked DataFrameWriter
         when(dataFrameWriterMock.mode("append")).thenReturn(dataFrameWriterMock);
         // Calling the PROC
         String result = new Proc1().call(session);

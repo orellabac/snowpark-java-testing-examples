@@ -46,7 +46,6 @@ public class Register {
         session.removeDependency("libs/commons-math3.jar");
         session.removeDependency("libs/curvesapi.jar");
         session.removeDependency("libs/log4j-api.jar");
-
     }
 
     public void LANGUAGEDETECTOR() {

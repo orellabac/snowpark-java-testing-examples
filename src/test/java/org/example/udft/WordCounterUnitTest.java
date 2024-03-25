@@ -37,9 +37,8 @@ public class WordCounterUnitTest {
 
     }
 
-    @SuppressWarnings("unchecked")
     @Test
-    public void shouldXXX() {
+    public void shouldCountAllWordsInSample() {
         List<Row> allResults = new ArrayList<Row>();
         Map<String,List<Row>> allResultsByPartition = new HashMap<String,List<Row>>();
         df.rows().groupBy("author").forEach(0, (groupKey, group) -> {

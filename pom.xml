@@ -10,7 +10,7 @@
 
   <name>Project with some examples testing techniques in Snowpark Java</name>
 
-  <url>https://docs.snowflake.com/en/developer-guide/snowpark/java/index.html</url>
+  <url>https://github.com/orellabac/snowpark-java-testing-examples</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
